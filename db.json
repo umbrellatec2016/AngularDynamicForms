@@ -1,0 +1,277 @@
+{
+	"guest":{
+		"name":"The guest",
+		"last_name":"Other Planet",
+		"email":"guest@guestland.com",
+		"phone":"+346987885XX",
+		"adversiting":{
+			"primary":"We are happy to give you 50% overcharges",
+			"ads":[
+				{
+					"data":"Free cancelation 1 Month before"
+				}
+			]
+		}
+	},
+	"company":{
+		"name":"The Company",
+		"last_name":"From Earth",
+		"email":"dad@evilcompany.com",
+		"phone":"+346987885XX",
+		"adversiting":{
+			"primary":"We are happy to give you 20% overcharges",
+			"ads":[
+				{
+					"data":"Free cancelation 10 days before"
+				}
+			]
+		}
+	},
+	"agency":{
+		"name":"The Company",
+		"last_name":"From Earth",
+		"email":"dad@evilcompany.com",
+		"phone":"+346987885XX",
+		"adversiting":{
+			"primary":"We are happy to give you 5% overcharges",
+			"ads":[
+				{
+					"data":"Free cancelation 1 day before"
+				}
+			]
+		}
+	},
+	"agencyForm":{
+		"action":"/login/process",
+		"elements":[
+			{
+				"type": "input",
+				"label": "Username",
+				"inputType": "text",
+				"name": "name",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "pattern",
+						"validator": "^[a-zA-Z]+$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Contact Name",
+				"inputType": "text",
+				"name": "contact",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "pattern",
+						"validator": "^[a-zA-Z]+$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Contact Email",
+				"inputType": "text",
+				"name": "contact_mail",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "email",
+						"validator": "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Agency ID",
+				"inputType": "text",
+				"name": "contact_mail",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "pattern",
+						"validator": "^[0-9]+$",
+						"message": "Solo se permite enteros"
+					  }
+				]
+			},
+			
+			{
+				"type": "button",
+				"label": "enviar",
+				"name": "submit"
+				
+			}
+		]
+	},
+	"companyForm":{
+		"action":"/login/process",
+		"elements":[
+			{
+				"type": "input",
+				"label": "Username",
+				"inputType": "text",
+				"name": "name",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "pattern",
+						"validator": "^[a-zA-Z]+$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Company Name",
+				"inputType": "text",
+				"name": "contact",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "pattern",
+						"validator": "^[a-zA-Z]+$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Contact Email",
+				"inputType": "text",
+				"name": "contact_mail",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					},
+					{
+						"name": "email",
+						"validator": "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$",
+						"message": "Solo se permite texto"
+					  }
+				]
+			},
+			{
+				"type": "input",
+				"label": "Comments",
+				"inputType": "text",
+				"name": "contact_mail",
+				"validations": [
+					{
+						"name": "required",
+						"validator": "required",
+						"message": "Se requiere nombre"
+					}
+				]
+			},
+			
+			{
+				"type": "button",
+				"label": "enviar",
+				"name": "submit"
+				
+			}
+		]
+	},
+    "loginform":{
+		
+		"action":"/login/process",
+		"elements":[
+		{
+			"type": "input",
+			"label": "Username",
+			"inputType": "text",
+			"name": "name",
+			"validations": [
+				{
+					"name": "required",
+					"validator": "required",
+					"message": "Se requiere nombre"
+				},
+				{
+					"name": "pattern",
+					"validator": "^[a-zA-Z]+$",
+					"message": "Solo se permite texto"
+				  }
+			]
+		},
+		{
+			"type": "input",
+			"label": "password",
+			"inputType": "password",
+			"name": "password",
+			"validations": [
+				{
+					"name": "required",
+					"validator": "required",
+					"message": "Invalido"
+				},
+				{
+					"name": "pattern",
+					"validator": "^[a-zA-Z]+$",
+					"message": "Solo se permite texto"
+				  }
+			]
+		},
+		{
+			"type": "button",
+			"label": "enviar",
+			"name": "submit"
+			
+		}
+	]
+	},
+	"login":[
+
+		{ "id":"guest",
+			"access_token":"31j3kj2h3jk2h3nkjjd93939",
+			"expire_at":"1647964107",
+			"profile":"guest"
+		},
+		{
+			"id":"agency",
+			"access_token":"31j3kj2h3jk2h3nkjjd93939",
+			"expire_at":"1647964107",
+			"profile":"travel"
+		},
+		{
+			"id":"company",
+			"access_token":"31j3kj2h3jk2h3nkjjd93939",
+			"expire_at":"1647964107",
+			"profile":"travel"
+		}
+		
+	]
+		
+}
